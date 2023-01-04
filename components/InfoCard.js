@@ -1,4 +1,4 @@
-import CheckBox from "./checkBox";
+import CheckBox from "./CheckBox";
 import Image from "next/image";
 import yourTasks from "../public/yourTask.png";
 import teamProjects from "../public/teamProjects.png";
