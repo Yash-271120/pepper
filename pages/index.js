@@ -19,6 +19,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [show, setShow] = useState(false);
+
+  const ButtonClickHandler = async ()=>{
+    console.log("clicked");
+    const response = await fetch("https://pepper-backend-yash-271120.onrender.com/click",{
+      method:"POST",
+    })
+    const data = await response.json();
+  }
+
   const GiHamburgerMenuHandler = () => {
     const navbar = document.getElementById("navbar");
     if(show){
@@ -113,7 +122,7 @@ export default function Home() {
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button className="bg-purple-700 text-white rounded-lg py-2 px-4">
+            <button className="bg-purple-700 text-white rounded-lg py-2 px-4" onClick={ButtonClickHandler}>
               Request a demo
             </button>
           </div>
