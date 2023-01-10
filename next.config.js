@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true
 },
-basePath:"/pepper",
-  assetPrefix:"/pepper/",
 }
 
 module.exports = nextConfig

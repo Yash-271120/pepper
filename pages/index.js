@@ -22,6 +22,7 @@ export default function Home() {
 
   const ButtonClickHandler = async ()=>{
     console.log("clicked");
+    alert("Request a Demo Button clicked")
     const response = await fetch("https://pepper-backend-yash-271120.onrender.com/click",{
       method:"POST",
     })
